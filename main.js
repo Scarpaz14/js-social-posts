@@ -56,6 +56,9 @@ const posts = [
     }
 ];
 
+
+// MILESTONE 1 -----------
+
 const containerpost = document.querySelector(".post");
 
 for (let i=0; i<posts.length; i++){
@@ -90,9 +93,22 @@ for (let i=0; i<posts.length; i++){
         </div> 
     </div>            
 </div>
-
 </div>
   `;
 
   containerpost.innerHTML+= profileHTML;
 }
+
+
+// MILESTONE 2 ----------------- 
+
+function like(){
+    likeCount++;
+}
+const btnLike = document.querySelector(".js-like-button");
+btnLike.addEventListener("click",
+function(){
+    btnLike.classList.add("like-button--liked");
+}
+)
+
